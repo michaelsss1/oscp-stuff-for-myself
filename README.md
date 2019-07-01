@@ -26,4 +26,7 @@ unicornscan -i tap0 -Ir 160 10.11.1.22:1-4000
 
 # tomcat manager console deploy war 
 10.11.1.209:8080/[war_name]  
-
+# NFS mount
+cat /etc/exports “no_root_squash” can be exploit
+showmount -e [ip]
+mount -o rw,vers=2 [ip]:/tmp /tmp/1
